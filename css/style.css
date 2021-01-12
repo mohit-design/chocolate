@@ -1,0 +1,163 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Roboto-Light"; src: url("../fonts/Roboto-Light.ttf"); }
+@font-face { font-family: "Roboto-Regular"; src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face { font-family: "Roboto-Medium"; src: url("../fonts/Roboto-Medium.ttf"); }
+@font-face { font-family: "Roboto-Bold"; src: url("../fonts/Roboto-Bold.ttf"); }
+@font-face { font-family: "Lobster-Regular"; src: url("../fonts/Lobster-Regular.ttf"); }
+@font-face { font-family: "Chocolate-Bar"; src: url("../fonts/Chocolate-Bar.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus { outline: 0; text-decoration: none; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+body { background-color: #ffffff; overflow-x: hidden; }
+body.overflow-y-hidden { overflow: hidden; }
+.container-fluid { padding: 50px; }
+.no-gutters { margin: 0; }
+.no-gutters > [class*=col] { padding: 0; }
+.flex-align-center-desktop { align-items: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.section-heading > h2 { color: #351600; font: 7rem/1.2 "Chocolate-Bar"; margin-bottom: 30px; text-transform: uppercase; }
+.section-heading > h3 { color: #351600; font: 3rem/1.2 "Lobster-Regular"; margin-bottom: 15px; }
+p { color: #272727; font: 1.8rem/1.7 "Roboto-Light"; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Custom Scroll bar Section Starts -------*/
+
+::-webkit-scrollbar { width: 0; }
+
+/*------- Custom Scroll bar Section Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop {
+	background-color: #ffffff;
+	display: block;
+	left: 0;
+	padding: 15px 30px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	transition: 0.5s linear;
+	width: 100%;
+	z-index: 10;
+}
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > img { width: 150px; }
+.header-logo-desktop > a > p { color: #351600; font: 2.4rem/1.2 "Roboto-Bold"; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #800000; }
+.menu-listing-desktop { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; justify-content: flex-end; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 30px; }
+.menu-listing-desktop > li > a { color: #000000; display: block; font: 1.8rem/1.2 "Roboto-Light"; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #800000; }
+
+	/*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+	/*------- Banner Section Starts -------*/
+
+.bg-banner-home { height: calc(100vh - 58px); padding: 0; position: relative; z-index: 1; }
+.banner-info-home { left: 55%; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 100%; z-index: 9; }
+.banner-info-home > h1 { font: 7vw/1.2 "Roboto-Bold"; text-transform: uppercase; }
+.banner-info-home > h1 > span:first-child,
+.banner-info-home > h1 > span:last-child { color: transparent; -webkit-text-stroke: 1px #ffffff; }
+.banner-info-home > h1 > span { color: #ffffff; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; }
+.banner-info-home > h1 > span:hover { color: #ffffff; }
+.bg-banner-home::after { background-color: #351600; bottom: 0; height: calc(100vh - 150px); left: 0; position: absolute; width: 90%; z-index: -1; }
+.banner-info-home > h1 > span { display: block; }
+.box-banner-home { background: url("../images/banner.jpg") no-repeat fixed center/cover; height: calc(100vh - 10vw); }
+
+	/*------- Banner Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.bg-about-home { padding: 50px 0; }
+.about-image-home { text-align: right; }
+.about-image-home > img { display: inline-block; width: 500px; }
+.about-heading-home { padding: 50px; }
+.about-heading-home > h3 { color: #351600; }
+.about-heading-home > h2 { color: #351600; }
+.about-heading-home > h2 > span { color: #800000; }
+.about-heading-home > p { margin-bottom: 30px; }
+.about-heading-home > p:last-child { margin-bottom: 0; }
+
+	/*------- Animation CSS Starts -------*/
+
+.about-heading-home > h3::after,
+.about-heading-home > h2::after,
+.about-heading-home > p::after { background-color: #ffffff; bottom: 0; content: ""; height: 100%; position: absolute; right: 0; -webkit-transition: 1s linear; -moz-transition: 1s linear; -ms-transition: 1s linear; -o-transition: 1s linear; transition: 1s linear; width: 100%; }
+.about-heading-home.active > h3::after,
+.about-heading-home.active > h2::after,
+.about-heading-home.active > p::after { height: 0; }
+
+		/*------- Animation CSS Ends -------*/
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Footer Section Starts -------*/
+
+.bg-footer-home { position: relative; }
+.bg-footer-home::before { background-color: #351600; bottom: 0; content: ""; display: block; height: 100%; left: 0; position: absolute; -webkit-transition: 1.5s linear; -moz-transition: 1.5s linear; -ms-transition: 1.5s linear; -o-transition: 1.5s linear; transition: 1.5s linear; width: 85%; }
+.bg-footer-home::after { background-color: #1f0d00; bottom: 0; content: ""; display: block; height: 35%; left: 0; position: absolute; width: 100%; z-index: -1; }
+.footer-logo-home > a { display: inline-block; }
+.footer-logo-home > a > img { margin: 0 auto 100px; width: 300px; }
+.footer-logo-home > a > p { color: #ffffff; font: 3rem/1.2 "Roboto-Bold"; text-transform: uppercase; }
+.footer-logo-home > a > p > span { display: block; }
+.footer-contact-home > p,
+.footer-contact-home > p > a { color: #cccccc; display: block; letter-spacing: 2px; margin-bottom: 60px; }
+.footer-contact-home > p { position: relative; }
+.footer-contact-home > p > a { display: block; margin-bottom: 15px; }
+.footer-contact-home > p > a { padding-left: 100px; }
+.footer-contact-home > p::before { content: "Email - "; left: 0; position: absolute; top: 0; }
+.footer-quick-listing-home > li { display: block; margin-bottom: 10px; }
+.footer-quick-listing-home > li > a { color: #ffffff; font: 1.4rem/1.4 "Roboto-Light"; letter-spacing: 2px; }
+.footer-quick-listing-home > li > a:hover,
+.footer-contact-home > p > a:hover { color: #ff9800; letter-spacing: 4px; }
+.footer-social-listing-home > li { display: inline-block; margin-right: 30px; }
+.footer-social-listing-home > li:last-child { margin-right: 0; }
+.footer-social-listing-home > li > a { color: #cccccc; font-size: 2rem; }
+.footer-social-listing-home > li > a:hover { color: #ff9800; }
+
+	/*------- Footer Section Ends -------*/
+
+	/*------- Copyright Section Starts -------*/
+
+.bg-copyright-home { background-color: #1f0d00; padding: 30px 100px; }
+.copyright-info { color: #ffffff; font-size: 1.6rem; }
+.copyright-info > span,
+.copyright-info > a { color: #ff9800; }
+.footer-tc-pp-listing { display: -webkit-box; display: -webkit-flex; display: -ms-flex; display: flex; justify-content: flex-end; }
+.footer-tc-pp-listing > li { border-right: 1px solid #ffffff; display: inline-block; padding: 0 15px; }
+.footer-tc-pp-listing > li:last-child { border-right: 0; margin-right: 0; }
+.footer-tc-pp-listing > li > a { color: #ffffff; font: 1.6rem/1.4 "Roboto-Light"; }
+.footer-tc-pp-listing > li > a:hover { color: #ff9800; }
+
+	/*------- Copyright Section Ends -------*/
+
+/*------- Home Page Ends -------*/
